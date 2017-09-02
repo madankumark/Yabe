@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="Yabe">
+    <property file="nbproject/nbjdk.properties"/>
+    <property location="${netbeans.user}/build.properties" name="user.properties.file"/>
+    <property file="${user.properties.file}"/>
+    <import file="jdk.xml"/>
+    <target depends="-jdk-init" name="doNothing">
+        <ant antfile="D:\PlayFramework\play-1.2.4\framework\build.xml" inheritall="false" target="doNothing"/>
+    </target>
+    <target depends="-jdk-init" name="nb-run-application">
+        <ant antfile="D:\PlayFramework\play-1.2.4\framework\build.xml" inheritall="false" target="nb-run-application"/>
+    </target>
+    <target depends="-jdk-init,-jdk-presetdef-nbjpdastart" name="nb-debug">
+        <ant antfile="D:\PlayFramework\play-1.2.4\framework\build.xml" inheritall="false" target="nb-debug"/>
+    </target>
+    <target depends="-jdk-init" name="test-application">
+        <ant antfile="D:\PlayFramework\play-1.2.4\framework\build.xml" inheritall="false" target="test-application"/>
+    </target>
+</project>
